@@ -16,9 +16,9 @@ using System.Collections.Generic;
 
 namespace FuncManagedIdentity
 {
-    public static class Function1
+    public static class GetCities
     {
-        [FunctionName("Function1")]
+        [FunctionName("GetCities")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
