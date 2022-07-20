@@ -30,7 +30,7 @@ namespace FuncManagedIdentity
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             name = name ?? data?.name;
-            log.LogInformation($"Got name {name}.");
+            log.LogInformation($"Got id {name}.");
 
             string apimUrl = req.Query["apimUrl"];
             apimUrl = apimUrl ?? data?.apimUrl;
